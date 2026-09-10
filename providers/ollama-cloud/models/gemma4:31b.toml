@@ -1,3 +1,4 @@
+# Costs: https://ollama.com/pricing (accessed 2026-09-10)
 name = "gemma4:31b"
 description = "Open Gemma instruction model for efficient chat and self-hosted deployments"
 family = "gemma"
@@ -10,7 +11,6 @@ tool_call = true
 last_updated = "2026-04-08"
 open_weights = true
 
-# https://ollama.com/pricing (accessed 2026-09-10)
 [cost]
 input = 0.14
 output = 0.40

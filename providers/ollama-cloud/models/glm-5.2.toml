@@ -1,3 +1,4 @@
+# Costs: https://ollama.com/pricing (accessed 2026-09-10)
 base_model = "zhipuai/glm-5.2"
 open_weights = true
 
@@ -11,7 +12,6 @@ field = "reasoning_content"
 [limit]
 context = 976_000
 
-# https://ollama.com/pricing (accessed 2026-09-10)
 [cost]
 input = 1.40
 output = 4.40

@@ -1,13 +1,20 @@
+# Toggle: native POST /api/chat and /api/generate use `think = true|false`.
+# Effort: OpenAI POST /v1/chat/completions accepts top-level `reasoning_effort`
+# or `reasoning.effort` with high|max (DeepSeek V4 maps low/medium -> high).
+# Sources: https://docs.ollama.com/capabilities/thinking, https://docs.ollama.com/openai
+# Costs: https://ollama.com/pricing (accessed 2026-09-10)
+# API-verified context: https://ollama.com/api/show (deepseek4.context_length = 1048576)
+# Output: same deepseek4 family as peer deepseek-v4-flash:0731, which serves
+# output = 1048576; unpinned deepseek-v4-pro served output = 1048576 before removal.
 base_model = "deepseek/deepseek-v4-pro-0813"
 
 reasoning_options = [{ type = "toggle" }, { type = "effort", values = ["high", "max"] }]
 
-# https://ollama.com/pricing (accessed 2026-09-10)
+[limit]
+context = 1048576
+output = 1048576
+
 [cost]
 input = 0.66
 output = 1.98
 cache_read = 0.022
-
-[limit]
-context = 1048576
-output = 65536

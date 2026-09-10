@@ -1,3 +1,4 @@
+# Costs: https://ollama.com/pricing (accessed 2026-09-10)
 name = "glm-5.1"
 description = "Flagship GLM model for hybrid reasoning, coding, and agentic engineering"
 family = "glm"
@@ -9,7 +10,6 @@ release_date = "2026-03-27"
 last_updated = "2026-04-07"
 open_weights = true
 
-# https://ollama.com/pricing (accessed 2026-09-10)
 [cost]
 input = 1.00
 output = 3.20
